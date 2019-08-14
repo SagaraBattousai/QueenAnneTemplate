@@ -1,0 +1,157 @@
+
+body {
+  font-family: "helveticaneuemedium";
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.line {
+  background-color: #C8C8C8;
+  width: 26px;
+  height: 2px;
+  margin-bottom: 20px;
+}
+
+.featured-post-tag {
+  color: #A1A1A1;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.featured-post-headline {
+  display: inline-block;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.social-media-nav {
+  background-color: #E3F2FD;
+}
+
+.read-more-btn {
+  border-color: #97A6B1;
+  color: #97A6B1;
+
+}
+.read-more-btn:hover {
+  background-color: #E3F2FD;
+  border-color: #97A6B1;
+  color: #97A6B1;
+
+}
+
+.featured-post-image-title-box{
+  background-color: #000000;
+  top: 35%;
+  left: 25%;
+  width: 50%;
+  height: 30%;
+  position: absolute;
+  /* z-index: 10; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-post-image-title{
+  font-size: 10px;
+  color: #FFFFFF;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.new-section {
+  margin: 50px;
+}
+
+
+
+
+
+
+
+
+
+/*************************************/
+/************ RESPONSIVE *************/
+/*************************************/
+
+
+/*****Extra small*****/
+@media screen and (min-width: 0px) {
+  .featured-post-headline {
+    font-size: 18px;
+  }
+  .featured-post-tag {
+    font-size: 9px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+/*****Small*****/
+@media screen and (min-width: 576px) {
+  .featured-post-headline {
+    font-size: 18px;
+  }
+  .featured-post-tag {
+    font-size: 9px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+/*****Medium*****/
+@media screen and (min-width: 768px) {
+  .featured-post-headline {
+    font-size: 18px;
+  }
+  .featured-post-tag {
+    font-size: 9px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+/*****Large*****/
+@media screen and (min-width: 992px) {
+  .featured-post-headline {
+    font-size: 24px;
+  }
+  .featured-post-tag {
+    font-size: 11px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+/*****Extra large*****/
+@media screen and (min-width: 1200px) {
+  .featured-post-headline {
+    font-size: 24px;
+  }
+  .featured-post-tag {
+    font-size: 11px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
