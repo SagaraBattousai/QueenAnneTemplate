@@ -3,6 +3,9 @@ body {
   font-family: "helveticaneuemedium";
 }
 
+.navbar-page-list {
+}
+
 .featured-post-image {
   max-width: 100%;
   height: auto;

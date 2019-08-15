@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr' lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content=""/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Title -->
+    <title>Queen Anne's History</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- Style CSS -->
+    <!-- <link rel="stylesheet" href="style.css"/> -->
+    <!-- Script -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script type="text/javascript" async src="https://assets.pinterest.com/js/pinit_main.js"></script>
+    <script async crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0&appId=719821921794248&autoLogAppEvents=1"></script>
+    <script>
+      function loadStyle(){
+        $("#PageList1 ul").addClass('navbar-nav mr-auto page-list');
+        $("#PageList1 li").addClass('nav-item btn btn read-more-btn');
+        $("#PageList1 a").addClass('nav-link');
+        }
+    
+      if(document.readyState === 'loading') {
+        window.addEventListener('DOMContentLoaded', loadStyle);
+      } else {
+        loadStyle();
+      }
+    </script>
+
+
+	<b:skin><![CDATA[
+          /**PUT YOUR ALL CSS HERE**/
+          body {
+            font-family: "helveticaneuemedium";
+          }
+          
+          .featured-post-image {
+            max-width: 100%;
+            height: auto;
+          }
+          
+          .post-image {
+            max-width: 90%;
+            height: auto;
+          }
+          
+          .post-date {
+            position: absolute;
+            z-index: 10;
+            left: 5%;
+            top: 5%;
+            border: 1px solid #787878;
+            background-color: #FFFFFF;
+            padding: 20px 8px;
+            text-align: center;
+          }
+          
+          .date-number {
+            text-transform: uppercase;
+            color: #000000;
+            line-height: 1;
+          }
+          
+          .date-month {
+            display: block;
+            /* font-family */
+            color: #878787;
+          }
+          
+          .line {
+            background-color: #C8C8C8;
+            width: 26px;
+            height: 2px;
+            margin-bottom: 20px;
+          }
+          
+          .featured-post-tag {
+            color: #A1A1A1;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            display: block;
+          }
+          
+          .featured-post-headline {
+            display: inline-block;
+            color: #000000;
+            margin-bottom: 30px;
+          }
+          
+          .post-tag {
+            color: #A1A1A1;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            margin-bottom: 8px;
+            display: block;
+          }
+          
+          .post-headline {
+            display: inline-block;
+            color: #000000;
+            margin-bottom: 24px;
+          }
+          
+          .social-media-nav {
+            border-bottom: 1px solid;
+            border-color: #97A6B1;
+          }
+          
+          .bg-nav {
+            background-color: #E3F2FD;
+          }
+          
+          .featured-read-more-btn
+           {
+            border-color: #97A6B1;
+            color: #97A6B1;
+          
+          }
+          
+          .featured-read-more-btn:hover {
+            background-color: #E3F2FD;
+            border-color: #97A6B1;
+            color: #97A6B1;
+          
+          }
+          
+          .read-more-btn {
+            border-color: #97A6B1;
+            color: #97A6B1;
+          
+          }
+          .read-more-btn:hover {
+            background-color: #E3F2FD;
+            border-color: #97A6B1;
+            color: #97A6B1;
+          
+          }
+          
+          .subscribe-btn {
+            border-color: #97A6B1;
+            color: #97A6B1;
+          
+          }
+          .subscribe-btn:hover {
+            background-color: #E3F2FD;
+            border-color: #97A6B1;
+            color: #97A6B1;
+          
+          }
+          
+          .featured-post-image-title-box{
+            background-color: #000000;
+            top: 35%;
+            left: 25%;
+            width: 50%;
+            height: 30%;
+            position: absolute;
+            /* z-index: 10; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          
+          .featured-post-image-title{
+            font-size: 10px;
+            color: #FFFFFF;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+          }
+          
+          .new-section {
+            margin: 50px;
+          }
+          
+          .post-meta {
+            font-size: 9px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+          }
+          
+          .post-meta a {
+            color: #000000;
+          }
+          
+          .post-meta p {
+            color: #878787;
+            display: inline-block;
+            margin-right: 7%;
+          }
+          
+          .advert {
+            margin: auto;
+            width: max-content;
+            text-align: center;
+          }
+          
+          .tags {
+            display: flex;
+            flex-wrap: wrap;
+          }
+          
+          .tags li {
+            list-style: none;
+          }
+          
+          .tags a {
+            margin: 5px;
+            display: block;
+          }
+          
+          
+          
+          
+          /*************************************/
+          /************ RESPONSIVE *************/
+          /*************************************/
+          
+          
+          /*****Extra small*****/
+          @media screen and (min-width: 0px) {
+            .featured-post-headline {
+              font-size: 18px;
+            }
+            .post-headline {
+              font-size: 16px;
+            }
+            .featured-post-tag {
+              font-size: 9px;
+            }
+            .featured-post-text {
+              font-size: 16px;
+            }
+            .post-text {
+              font-size: 14px;
+            }
+            .date-number {
+              font-size: 20px;
+            }
+            .date-month {
+              font-size: 9px;
+            }
+          }
+          /*****Small*****/
+          @media screen and (min-width: 576px) {
+            .featured-post-headline {
+              font-size: 18px;
+            }
+            .post-headline {
+              font-size: 16px;
+            }
+            .featured-post-tag {
+              font-size: 9px;
+            }
+            .featured-post-text {
+              font-size: 16px;
+            }
+            .post-text {
+              font-size: 14px;
+            }
+            .date-number {
+              font-size: 20px;
+            }
+            .date-month {
+              font-size: 9px;
+            }
+          }
+          /*****Medium*****/
+          @media screen and (min-width: 768px) {
+            .featured-post-headline {
+              font-size: 18px;
+            }
+            .post-headline {
+              font-size: 16px;
+            }
+            .featured-post-tag {
+              font-size: 9px;
+            }
+            .featured-post-text {
+              font-size: 16px;
+            }
+            .post-text {
+              font-size: 14px;
+            }
+            .date-number {
+              font-size: 20px;
+            }
+            .date-month {
+              font-size: 9px;
+            }
+          }
+          /*****Large*****/
+          @media screen and (min-width: 992px) {
+            .featured-post-headline {
+              font-size: 24px;
+            }
+            .post-headline {
+              font-size: 20px;
+            }
+            .featured-post-tag {
+              font-size: 11px;
+            }
+            .featured-post-text {
+              font-size: 18px;
+            }
+            .post-text {
+              font-size: 16px;
+            }
+            .date-number {
+              font-size: 24px;
+            }
+            .date-month {
+              font-size: 11px;
+            }
+          }
+          /*****Extra large*****/
+          @media screen and (min-width: 1200px) {
+            .featured-post-headline {
+              font-size: 32px;
+            }
+            .post-headline {
+              font-size: 28px;
+            }
+            .featured-post-tag {
+              font-size: 14px;
+            }
+            .post-tag {
+              font-size: 12px;
+            }
+            .featured-post-text {
+              font-size: 18px;
+            }
+            .post-text {
+              font-size: 16px;
+            }
+            .date-number {
+              font-size: 24px;
+            }
+            .date-month {
+              font-size: 11px;
+            }
+          }
+    ]]></b:skin>
+    <!-- <b:if cond='data:blog.pageType == &quot;index&quot;'> -->
+    <!--   <style> -->
+    <!--   .sidebar{display:none;} -->
+    <!--   .post-wrapper{width:100%} -->
+    <!--   </style> -->
+    <!-- </b:if> -->
+    <!-- <b:if cond='data:blog.pageType == &quot;item&quot;'> -->
+    <!-- <b:if cond='data:blog.pageType == &quot;static&quot;'> -->
+    <!--   <style> -->
+    <!--     .sidebar{display:block;} -->
+    <!--   </style> -->
+    <!-- </b:if> -->
+    <!-- </b:if> -->
+  
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- Top Social Area -->
+      <nav class="justify-content-end nav bg-nav social-media-nav">
+        
+        <span class="nav-link">
+          <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a>
+        </span>
+        
+        <span class="nav-link">
+          <a href="https://www.pinterest.com/pin/create/button/" data-pin-do="buttonBookmark" data-toggle="tooltip" title="Pinterest" aria-hidden="true">Pin It</a>
+        </span> 
+        <span class="nav-link">
+          <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button_count" aria-hidden="true" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+        </span>
+      </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+        <div class="collapse navbar-collapse" id="navBarDiv">
+            <b:section class='collapse navbar-collapse' id="headerSection">
+              <b:widget id="PageList1" title='' type="PageList">
+              </b:widget>
+            </b:section>
+            <!-- <ul class="navbar-nav mr-auto"> -->
+            <!-- <li class="nav-item"> -->
+            <!--   <a class="nav-link" href="#">p1</a> -->
+            <!-- </li> -->
+          <!-- </ul> -->
+          <form class="form-inline my-2 my-lg-0">
+            <b:section id="headerSearchSection">
+              <b:widget id="BlogSearch1" title='' type="BlogSearch">
+              </b:widget>
+            </b:section>
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-albel="Search"/>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+
+      </nav>
+      <br/>
+      <!-- ##### Featured Blog Start ##### -->
+      <div class="row align-items-center">
+        
+        <div class="col-md-4 offset-md-2">
+            <!-- Blog Content -->
+              <div class="line"></div>
+              <a href="#" class="featured-post-tag">Lifestyle</a>
+              <h4>
+                <a href="#" class="featured-post-headline">Welcome to this Lifestyle blog</a>
+              </h4>
+              <p class="featured-post-text">Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt. Morbi sodales, dolor id ultricies dictum</p>
+              <a href="#" class="btn featured-read-more-btn">Read More</a>
+        </div>
+        
+        <div class="col-md-4">
+          <img class="featured-post-image" src="img/blog-img/1.jpg" alt=""/>
+          <!-- Catagory Title -->
+          <div class="featured-post-image-title-box">
+            <a class="featured-post-image-title" href="#">Lifestyle posts</a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row new-section"></div>
+  
+      <div class="row align-items-center">
+        <div class="col-md-4 offset-md-2">
+          <img class="post-image" src="img/blog-img/3.jpg" alt=""/>
+          <div class="post-date">
+            <a class="date-number" href="#">12 <span class="date-month">march</span></a>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <!-- Blog Content -->
+          <div class="line"></div>
+          <a href="#" class="post-tag">Lifestyle</a>
+          <h4>
+            <a href="#" class="post-headline">Party people in the house</a>
+          </h4>
+          <p class="post-text">Curabitur venenatis efficitur lorem sed tempor. Integer aliquet tempor cursus. Nullam vestibulum convallis risus vel condimentum. Nullam auctor lorem in libero luctus, vel volutpat quam tincidunt.</p>
+          <div class="post-meta">
+            <p>By <a href="#">james smith</a></p>
+            <p>3 comments</p>
+          </div>
+          <a href="#" class="btn read-more-btn">Read More</a>
+        </div>
+          
+      </div>
+  
+      <div class="row new-section"></div>
+  
+      <div class="row align-items-center">
+        <div class="col-md-4 offset-md-2">
+          <h5 class="follow-by-email">Subscribe to my newsletter</h5>
+          <form action="#" class="newsletterForm">
+            <input type="email" name="email" id="subscribesForm" placeholder="Your e-mail here"/>
+            <button type="submit" class="btn subscribe-btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+  
+      <div class="row new-section"></div>
+  
+          <!-- Widget Area -->
+      <div class="row align-items-center advert">
+        <div class="col-md-12">
+          <h5 class="title">Advertisement</h5>
+          <a href="#"><img src="img/bg-img/add.gif" alt=""/></a>
+        </div>
+      </div>
+  
+          <!-- TODO: Archive -->
+          <!-- <div class="row"> -->
+          <!--   <div class="col-md-6"> -->
+          <!--   <h5 class="title">Latest Posts</h5> -->
+          <!--   <div class="widget-content"> -->
+          <!--     <div class="single-blog-post d-flex align-items-center widget-post"> -->
+          <!--       <div class="post-thumbnail"> -->
+          <!--         <img src="img/blog-img/lp1.jpg" alt=""> -->
+          <!--       </div> -->
+          <!--       <div class="post-content"> -->
+          <!--         <a href="#" class="post-tag">Lifestyle</a> -->
+          <!--         <h4> -->
+          <!--           <a href="#" class="post-headline">Party people in the house</a> -->
+          <!--         </h4> -->
+          <!--         <div class="post-meta"> -->
+          <!--           <p><a href="#">12 March</a></p> -->
+          <!--         </div> -->
+          <!--       </div> -->
+          <!--     </div> -->
+  
+      <!-- Widget Area -->
+      <div class="row align-items-center">
+        <div class="col-md-8 offset-md-2">
+          <h5 class="title">Tags</h5>
+        </div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-8 offset-md-2">
+          <ul class="tags">
+            <li><a class="btn btn-outline-danger" href="#">design</a></li>
+            <li><a class="btn btn-outline-danger" href="#">fashion</a></li>
+            <li><a class="btn btn-outline-danger" href="#">travel</a></li>
+            <li><a class="btn btn-outline-danger" href="#">music</a></li>
+            <li><a class="btn btn-outline-danger" href="#">party</a></li>
+            <li><a class="btn btn-outline-danger" href="#">video</a></li>
+            <li><a class="btn btn-outline-danger" href="#">photography</a></li>
+            <li><a class="btn btn-outline-danger" href="#">adventure</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+</html>
