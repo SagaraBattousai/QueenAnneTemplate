@@ -3,9 +3,37 @@ body {
   font-family: "helveticaneuemedium";
 }
 
-img {
+.featured-post-image {
   max-width: 100%;
   height: auto;
+}
+
+.post-image {
+  max-width: 90%;
+  height: auto;
+}
+
+.post-date {
+  position: absolute;
+  z-index: 10;
+  left: 5%;
+  top: 5%;
+  border: 1px solid #787878;
+  background-color: #FFFFFF;
+  padding: 20px 8px;
+  text-align: center;
+}
+
+.date-number {
+  text-transform: uppercase;
+  color: #000000;
+  line-height: 1;
+}
+
+.date-month {
+  display: block;
+  /* font-family */
+  color: #878787;
 }
 
 .line {
@@ -29,8 +57,41 @@ img {
   margin-bottom: 30px;
 }
 
+.post-tag {
+  color: #A1A1A1;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.post-headline {
+  display: inline-block;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
 .social-media-nav {
+  border-bottom: 1px solid;
+  border-color: #97A6B1;
+}
+
+.bg-nav {
   background-color: #E3F2FD;
+}
+
+.featured-read-more-btn
+ {
+  border-color: #97A6B1;
+  color: #97A6B1;
+
+}
+
+.featured-read-more-btn:hover {
+  background-color: #E3F2FD;
+  border-color: #97A6B1;
+  color: #97A6B1;
+
 }
 
 .read-more-btn {
@@ -39,6 +100,18 @@ img {
 
 }
 .read-more-btn:hover {
+  background-color: #E3F2FD;
+  border-color: #97A6B1;
+  color: #97A6B1;
+
+}
+
+.subscribe-btn {
+  border-color: #97A6B1;
+  color: #97A6B1;
+
+}
+.subscribe-btn:hover {
   background-color: #E3F2FD;
   border-color: #97A6B1;
   color: #97A6B1;
@@ -69,11 +142,41 @@ img {
   margin: 50px;
 }
 
+.post-meta {
+  font-size: 9px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
 
+.post-meta a {
+  color: #000000;
+}
 
+.post-meta p {
+  color: #878787;
+  display: inline-block;
+  margin-right: 7%;
+}
 
+.advert {
+  margin: auto;
+  width: max-content;
+  text-align: center;
+}
 
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
 
+.tags li {
+  list-style: none;
+}
+
+.tags a {
+  margin: 5px;
+  display: block;
+}
 
 
 
@@ -87,11 +190,23 @@ img {
   .featured-post-headline {
     font-size: 18px;
   }
+  .post-headline {
+    font-size: 16px;
+  }
   .featured-post-tag {
     font-size: 9px;
   }
-  p {
-    font-size: 12px;
+  .featured-post-text {
+    font-size: 16px;
+  }
+  .post-text {
+    font-size: 14px;
+  }
+  .date-number {
+    font-size: 20px;
+  }
+  .date-month {
+    font-size: 9px;
   }
 }
 /*****Small*****/
@@ -99,11 +214,23 @@ img {
   .featured-post-headline {
     font-size: 18px;
   }
+  .post-headline {
+    font-size: 16px;
+  }
   .featured-post-tag {
     font-size: 9px;
   }
-  p {
-    font-size: 12px;
+  .featured-post-text {
+    font-size: 16px;
+  }
+  .post-text {
+    font-size: 14px;
+  }
+  .date-number {
+    font-size: 20px;
+  }
+  .date-month {
+    font-size: 9px;
   }
 }
 /*****Medium*****/
@@ -111,11 +238,23 @@ img {
   .featured-post-headline {
     font-size: 18px;
   }
+  .post-headline {
+    font-size: 16px;
+  }
   .featured-post-tag {
     font-size: 9px;
   }
-  p {
-    font-size: 12px;
+  .featured-post-text {
+    font-size: 16px;
+  }
+  .post-text {
+    font-size: 14px;
+  }
+  .date-number {
+    font-size: 20px;
+  }
+  .date-month {
+    font-size: 9px;
   }
 }
 /*****Large*****/
@@ -123,23 +262,50 @@ img {
   .featured-post-headline {
     font-size: 24px;
   }
+  .post-headline {
+    font-size: 20px;
+  }
   .featured-post-tag {
     font-size: 11px;
   }
-  p {
-    font-size: 14px;
+  .featured-post-text {
+    font-size: 18px;
+  }
+  .post-text {
+    font-size: 16px;
+  }
+  .date-number {
+    font-size: 24px;
+  }
+  .date-month {
+    font-size: 11px;
   }
 }
 /*****Extra large*****/
 @media screen and (min-width: 1200px) {
   .featured-post-headline {
-    font-size: 24px;
+    font-size: 32px;
+  }
+  .post-headline {
+    font-size: 28px;
   }
   .featured-post-tag {
-    font-size: 11px;
-  }
-  p {
     font-size: 14px;
+  }
+  .post-tag {
+    font-size: 12px;
+  }
+  .featured-post-text {
+    font-size: 18px;
+  }
+  .post-text {
+    font-size: 16px;
+  }
+  .date-number {
+    font-size: 24px;
+  }
+  .date-month {
+    font-size: 11px;
   }
 }
 
